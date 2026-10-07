@@ -5,7 +5,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5100/products")
+    fetch("https://fronted-backend.onrender.com/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
